@@ -1,0 +1,1212 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Reem Kufi', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../new_img/bg.png');
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    padding: unset;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-top: unset;
+    padding: unset;
+    line-height: unset;
+}
+
+p {
+    padding: unset;
+    margin: unset;
+}
+
+::placeholder {
+    font-family: 'Reem Kufi', sans-serif;
+    color: darkblue;
+}
+
+.main-menu {
+    max-width: 1920px;
+    margin: auto;
+    background-color: #151865;
+    position: sticky;
+    z-index: 999;
+    top: 0px;
+}
+
+.main-menu::before{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #151865;
+    bottom: -10px;
+    content: '';
+    filter: blur(20px);
+    z-index: -1;
+}
+
+.main-menu-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.sign-logo a:hover::after {
+    border: none;
+    display: none;
+}
+
+.sign-logo{
+    max-width: 150px;
+}
+
+.main-menu-right{
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+
+.main-menu-right a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: .6px;
+}
+
+.cursor-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.cursor-block div{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    color: #fff;
+}
+
+.overlay-menu{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.651);
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    z-index: 999;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.overlay-display{
+    transition: .5s;
+    left: 0px;
+}
+
+.overlay-menu-header{
+    max-width: 320px;
+    background-color: white;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.overlay-menu-footer{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    background-color: white;
+    padding-top: 0px;
+    height: 100%;
+}
+
+.overlay-menu-block{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 18px 20px;
+}
+
+.overlay-menu-block a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    letter-spacing: .6px;
+    width: 100%;
+}
+
+.overlay-menu-block:hover{
+    background-color: darkblue;
+}
+
+.overlay-menu-block:hover a{
+    color: white;
+}
+
+.overlay-menu-block:hover img{
+    filter: invert(100%);
+}
+
+#o_menu_active{
+    background-color: darkblue;
+    color: white;
+}
+
+#o_menu_active_img{
+    filter: invert(100%);
+}
+
+#close_overlay{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#close_overlay div{
+    width: 100%;
+    height: 5px;
+    background-color: white;
+}
+
+#close_overlay div:first-child{
+    transform: rotate(45deg);
+    top: 5px;
+    position: relative;
+}
+
+#close_overlay div:last-child{
+    transform: rotate(-45deg);
+}
+
+.menu-2{
+    max-width: 1920px;
+    margin: auto;
+    background-color: #151865;
+    padding: 15px 0px;
+    display: none;
+}
+
+.menu-2-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+}
+
+.menu-2-right{
+    color: white;
+    cursor: pointer;
+}
+
+.menu-icon-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.menu-icon{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.menu-2-content{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #151865;
+    padding: 0px 20px;
+    display: none;
+    flex-direction: column;
+}
+
+#menu a{
+    padding: 10px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-2-block:hover{
+    border-bottom: 1px solid white;
+}
+
+.display{
+    display: none;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #151865;
+    padding: 0px 20px;
+    flex-direction: column;
+}
+
+.job-seeker {
+    max-width: 1920px;
+    padding: 80px 0px;
+    margin: auto;
+}
+
+.job-seeker-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.job-seeker-right {
+    flex-basis: 1200px;
+    padding: 50px 0px;
+    padding-bottom: 0;
+    margin: auto;
+}
+
+.job-seeker-right-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.job-seeker-hero-text {
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid #190157;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+    color: black;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.23);
+    word-spacing: 5px;
+}
+
+.job-seeker-right-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.job-seeker-right-header-block {
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid #190157;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-basis: 250px;
+    justify-content: space-between;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.23);
+}
+
+.job-seeker-right-header-block-left {
+    font-size: 16px;
+    color: gray;
+}
+
+.job-seeker-right-header-block-left b {
+    font-size: 22px;
+    color: black;
+}
+
+.job-seeker-right-header-block-right {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.job-seeker-right-footer {
+    padding: 20px 0px;
+    border-top: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: aliceblue;
+}
+
+.job-seeker-right-footer-hero-text {
+    padding: 60px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    color: black;
+}
+
+.job-seeker-right-footer-hero-text h1{
+    word-spacing: 10px;
+}
+
+.job-seeker-right-footer-hero-text p {
+    font-size: 20px;
+    color: gray;
+    word-spacing: 5px;
+}
+
+#pop_up_chat{
+    position: sticky; 
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+}
+
+.open_chat_list{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: green;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+
+.chat_box{
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    overflow: auto;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-left: auto;
+    display: none;
+}
+
+.chat_box_block{
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid gray;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-left: auto;
+}
+
+#close_chat_list_menu{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.chat_box_content{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.chat_box_content img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.chat_box_2_block_2{
+    width: 300px;
+    height: 400px;
+    background-color: gainsboro;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: 300px;
+}
+
+.chat_box_2{
+    width: 300px;
+    background-color: gainsboro;
+    padding: 10px;
+    flex-direction: column;
+    row-gap: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: 300px;
+    display: none;
+}
+
+.chat_box_2_header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+}
+
+.chat_box_2_content{
+    height: 235px;
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 10px;
+    font-size: 15px;
+}
+
+.left{
+    background-color: aliceblue;
+    padding: 5px 8px;
+    border-radius: 15px;
+    border-bottom-left-radius: unset;
+}
+
+
+.right{
+    background-color: skyblue;
+    padding: 5px 8px;
+    border-radius: 15px;
+    border-bottom-right-radius: unset;
+}
+
+.chat_box_2_footer{
+    display: flex;
+}
+
+.text-field{
+    font-family: 'Reem Kufi', sans-serif;
+    flex-basis: 100%;
+    outline: none;
+    border: none;
+    padding: 5px 6px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Reem Kufi', sans-serif;
+    padding: 5px 20px;
+}
+
+#submitbtn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Reem Kufi', sans-serif;
+    padding: 5px 20px;
+}
+
+#chat_box_close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+footer{
+    max-width: 1920px;
+    margin: auto;
+    background-color: #151865;
+    padding: 50px 0px;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;   
+}
+
+.footer-block{
+    flex-basis: 360px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-block-header{
+    color: white;
+    letter-spacing: 1.8px;
+}
+
+.footer-block-footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: .6px;
+    word-spacing: 3px;
+    text-align: justify;
+}
+
+.footer-block-footer a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.footer-last{
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #151865;
+    color: white;
+    font-size: 18px;
+    letter-spacing: .7px;
+    border-top: 1px solid white;
+}
+
+@media screen and (max-width: 1024px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    job-seeker-hero-text {
+        line-height: 30px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    footer{
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    job-seeker-hero-text {
+        line-height: 30px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    job-seeker-hero-text {
+        line-height: 30px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+        font-size: 14px;
+    }
+    
+    .job-seeker-right-footer-text a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 411px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    job-seeker-hero-text {
+        line-height: 30px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 384px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    job-seeker-hero-text {
+        line-height: 30px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    job-seeker-hero-text {
+        line-height: 30px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    .job-seeker-hero-text {
+        line-height: 30px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 16px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .main-menu{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-2{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo{
+        width: 80px;
+    }
+
+    .display{
+        display: flex;
+    }
+
+    .job-seeker-left{
+        display: none;
+    }
+
+    .job-seeker-right{
+        flex-basis: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+    }
+
+    .job-seeker-hero-text {
+        line-height: 30px;
+    }
+
+    .job-seeker-right-footer-hero-text h1{
+        font-size: 20px;
+    }
+
+    .job-seeker-right-footer-hero-text p{
+        font-size: 14px;
+    }
+
+    .job-seeker-right-footer-text{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .job-seeker-right-footer-text a {
+        font-size: 13px;
+    }
+}

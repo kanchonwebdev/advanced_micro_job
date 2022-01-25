@@ -1,0 +1,177 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+     padding: 0;
+     margin: 0;
+     font-family: 'Reem Kufi', sans-serif;
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../new_img/bg.png');
+     background-position: center;
+     position: relative;
+}
+
+h1{
+     padding: unset;
+     margin: unset;
+}
+
+h2, h3, h4, h5, h6 {
+     margin: 0;
+     padding: 0;
+     line-height: 0;
+}
+
+p {
+     padding: 0;
+     margin: 0;
+}
+
+::placeholder {
+     font-family: 'Reem Kufi', sans-serif;
+     color: darkblue;
+}
+
+.active-job {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     row-gap: 50px;
+     padding-bottom: 50px;
+}
+
+.active-job-header {
+     display: flex;
+     flex-direction: column;
+     row-gap: 80px;
+}
+
+.active-job-btn-block {
+     display: flex;
+     align-items: center;
+     column-gap: 50px;
+     font-size: 20px;
+     cursor: pointer;
+     margin-bottom: 80px;
+     flex-wrap: wrap;
+     row-gap: 20px;
+}
+
+#active-status {
+     border-bottom: 2px solid black;
+}
+
+.active-job-content {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     row-gap: 50px;
+}
+
+.active-job-block {
+     display: flex;
+     flex-direction: column;
+     row-gap: 30px;
+}
+
+.active-job-block-header {
+     display: flex;
+     align-items: center;
+     column-gap: 20px;
+     font-size: 18px;
+}
+
+.active-job-block-header-left {
+     width: 20px;
+     height: 20px;
+     display: block;
+}
+
+.active-job-block-content {
+     display: flex;
+     align-items: center;
+     background-color: white;
+     border: 1px solid #535353;
+     border-radius: 3px;
+     padding: 5px;
+}
+
+.active-job-block-content-left {
+     width: 80px;
+}
+
+.active-job-block-content-right h2 {
+     font-size: 20px;
+}
+
+.active-job-block-content-right p {
+     font-size: 16px;
+     padding-top: 10px;
+}
+
+.offer{
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     right: 0px;
+     bottom: 0px;
+     background-color: rgba(128, 128, 128, 0.521);
+     width: 100%;
+     height: 100%;
+     display: none;
+     align-items: center;
+     justify-content: center;
+}
+
+.offer-container{
+     width: 500px;
+     display: flex;
+     flex-direction: column;
+     row-gap: 20px;
+     background-color: gray;
+     padding: 10px;
+}
+
+
+.text-field {
+     font-family: 'Reem Kufi', sans-serif;
+     padding: 10px 20px;
+     font-size: 18px;
+     border: 2px solid #36454f;
+     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+}
+
+.btn {
+     font-family: 'Reem Kufi', sans-serif;
+     font-size: 18px;
+     outline: none;
+     border: none;
+     cursor: pointer;
+     padding: 10px 20px;
+     color: white;
+     border-radius: 5px;
+     background-color: #740404;
+     width: 100%;
+     margin-left: auto;
+}
+
+.display{
+     display: flex;
+}
+
+.btn:hover {
+     box-shadow: 0px 0px 20px gray;
+}
+
+@media screen and (max-width: 1024px){
+     .active-job-block{
+          flex-basis: 45%;
+     }
+}
+
+@media screen and (max-width: 540px){
+     .active-job-block{
+          flex-basis: 100%;
+     }
+}

@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Reem Kufi', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../new_img/bg.png');
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: unset;
+    padding: unset;
+    line-height: unset;
+}
+
+p {
+    padding: unset;
+    margin: unset;
+}
+
+::placeholder {
+    font-family: 'Reem Kufi', sans-serif;
+    color: black;
+}
+
+.all-job {
+    max-width: 1920px;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.all-job-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.all-job-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.all-job-header h1 {
+    font-size: 40px;
+}
+
+.filter-block {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: space-between;
+    font-size: 18px;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+.filter-block-right {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 7px;
+}
+
+.filter-block-right div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.text-field {
+    padding: 10px 20px;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.all-job-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 100px;
+}
+
+.all-job-block {
+    flex-basis: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 10px 10px 20px gray;
+    padding: 20px 30px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.all-job-block-left {
+    flex-basis: 130px;
+}
+
+.all-job-block-left-img {
+    width: 100px;
+}
+
+.all-job-block-right {
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.all-job-block-right-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.all-job-right-block {
+    flex-basis: 165px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    column-gap: 10px;
+}
+
+.btn {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: #740404;
+    max-width: 180px;
+    margin: auto;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 20px gray;
+}
+
+.single-job {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(37, 35, 35, 0.514);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999;
+    padding: 0px 10px;
+    display: none;
+    padding-bottom: 200px;
+}
+
+.single-job-container {
+    max-width: 1200px;
+    position: sticky;
+    top: 0px;
+    margin: auto;
+    padding: 50px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.single-job-left {
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    border: 2px solid black;
+    padding: 35px;
+}
+
+.single-job-left-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.single-job-left-img {
+    width: 120px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.single-job-left-img img {
+    border-radius: 50%;
+}
+
+.single-job-left-text {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.single-job-left-content {
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 35px;
+}
+
+.single-job-right {
+    flex-basis: 700px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.single-job-right-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+
+.single-job-right-header h1 {
+    font-size: 40px;
+}
+
+.single-job-right-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.single-job-right-header-block {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 18px;
+}
+
+.single-job-right-header-block b {
+    font-size: 22px;
+}
+
+.single-job-right-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.single-job-right-content-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 80px;
+}
+
+.single-job-right-content-header-block {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.single-job-right-content-footer {
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 35px;
+    letter-spacing: .2px;
+}
+
+.single-job-right-footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.single-job-right-footer-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.text-field-2{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Reem Kufi', sans-serif;
+    border: 1px solid gray;
+    word-spacing: 5px;
+    line-height: 25px;
+}
+
+.close{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 28px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+@media screen and (max-width: 800px){
+    .all-job{
+        padding: 50px 20px;
+    }
+
+    .filter-block-right div {
+        justify-content: space-between;
+    }
+
+    .text-field{
+        font-size: 16px;
+        padding: 5px;
+        border: 1px solid gray;
+    }
+
+    .all-job-content{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .all-job{
+        padding: 50px 20px;
+    }
+
+    .filter-block-right div {
+        justify-content: space-between;
+        flex-basis: 100%;
+    }
+
+    .text-field{
+        font-size: 16px;
+        padding: 5px;
+        border: 1px solid gray;
+    }
+
+    .all-job-content{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .all-job{
+        padding: 50px 30px;
+    }
+
+    .filter-block-right div {
+        justify-content: space-between;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .text-field{
+        font-size: 16px;
+        padding: 5px;
+        border: 1px solid gray;
+        width: 100%;
+    }
+
+    .all-job-header h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .all-job{
+        padding: 50px 30px;
+    }
+
+    .filter-block-right div {
+        justify-content: space-between;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .text-field{
+        font-size: 16px;
+        padding: 5px;
+        border: 1px solid gray;
+        width: 100%;
+    }
+
+    .all-job-block-left-img {
+        width: 70px;
+    }
+
+    .single-job-left-content {
+        font-size: 16px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .single-job-right-header h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .all-job{
+        padding: 50px 30px;
+    }
+
+    .filter-block-right div {
+        justify-content: space-between;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .text-field{
+        font-size: 16px;
+        padding: 5px;
+        border: 1px solid gray;
+        width: 100%;
+    }
+
+    .all-job-block-left-img {
+        width: 70px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .rate{
+        width: 15px;
+    }
+
+    .single-job-left-text{
+        font-size: 16px;
+    }
+}

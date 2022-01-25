@@ -1,0 +1,81 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+     padding: 0;
+     margin: 0;
+     font-family: 'Reem Kufi', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+     margin: 0;
+     padding: 0;
+     line-height: 0;
+}
+
+p {
+     padding: 0;
+     margin: 0;
+}
+
+::placeholder {
+     font-family: 'Reem Kufi', sans-serif;
+     color: darkblue;
+}
+
+.message {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     row-gap: 50px;
+}
+
+.text-field {
+     padding: 10px 20px;
+     font-family: 'Reem Kufi', sans-serif;
+     font-size: 18px;
+     border: none;
+     outline: none;
+     width: 100%;
+     background-color: white;
+     border: 1px solid gray;
+}
+
+.message-content {
+     display: flex;
+     flex-direction: column;
+     row-gap: 10px;
+     padding-bottom: 80px;
+}
+
+.message-block {
+     flex-basis: 100%;
+     display: flex;
+     flex-direction: column;
+     row-gap: 0px;
+     padding: 20px 0px;
+     border-bottom: 1px solid black;
+}
+
+.message-block:last-child {
+     border: none;
+}
+
+.message-block-header {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     font-size: 18px;
+}
+
+.message-block-header-left {
+     width: 100px;
+}
+
+.message-block-footer {
+     word-spacing: 5px;
+     line-height: 25px;
+     font-size: 16px;
+     background-color: white;
+}

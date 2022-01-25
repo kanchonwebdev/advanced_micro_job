@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: unset;
+    padding: unset;
+    line-height: unset;
+}
+
+p {
+    padding: unset;
+    margin: unset;
+}
+
+::placeholder {
+    font-family: 'Reem Kufi', sans-serif;
+    color: darkblue;
+}
+
+.message-details {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin: auto;
+}
+
+.message-details-header {
+    background-color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+    padding: 20px;
+}
+
+.message-details-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    row-gap: 50px;
+}
+
+.message-details-left {
+    flex-basis: 700px;
+    position: relative;
+    height: 450px;
+}
+
+.message-details-left-header {
+    margin-bottom: 50px;
+	row-gap: 50px;
+    overflow-y: scroll;
+    height: 330px;
+    padding: 20px 10px;
+	background-color: aliceblue;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.message-details-left-block {
+    padding: 20px;
+    text-align: left;
+    line-height: 25px;
+    word-spacing: 5px;
+    font-size: 18px;
+	flex-basis: 100%;
+}
+
+.message-details-left-block:last-child {
+    margin: unset;
+}
+
+.left {
+    background-color: #f3f1ff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-bottom-left-radius: unset;
+}
+
+.right {
+    background-color: #fff8e5;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-bottom-right-radius: unset;
+}
+
+.message-detials-left-footer {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.msg-icon-block {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.icon-1 img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.icon-2 img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.message-block {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.text-field-2 {
+    width: 100%;
+    flex-basis: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #151865;
+    outline: none;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.btn {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 23px 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: #151865;
+    border: none;
+    outline: none;
+    border-radius: unset;
+}
+
+.message-details-right {
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    border: 2px solid gainsboro;
+    position: relative;
+    top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.message-details-right-content {
+    text-align: center;
+}
+
+.job-seeker-content-left-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.job-seeker-content-left-footer-block {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+}
+
+.icon, .rate {
+    width: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+    .message-details-content {
+        justify-content: center;
+        align-items: center;
+    }
+    .msg-icon-block {
+        display: none;
+    }
+}

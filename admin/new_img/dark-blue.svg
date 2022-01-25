@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="dark-blue.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview11"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.46324355"
+     inkscape:cx="342.15263"
+     inkscape:cy="560.1805"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="1912"
+     inkscape:window-y="98"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2" />
+  <g
+     id="layer1"
+     inkscape:export-filename="C:\Users\lazen\Desktop\partippl.png"
+     inkscape:export-xdpi="27.1"
+     inkscape:export-ydpi="27.1"
+     transform="translate(-41.123077,-2.2846154)">
+    <rect
+       style="opacity:0;fill:#0000ff;stroke-width:0.264583"
+       id="rect846"
+       width="300"
+       height="120"
+       x="2.8557694"
+       y="79.390381" />
+    <g
+       id="g2632">
+      <text
+         xml:space="preserve"
+         style="font-size:75px;line-height:1.25;font-family:Lobster;-inkscape-font-specification:Lobster;fill:#ff0000;stroke-width:0.781249"
+         x="25.543505"
+         y="153.14423"
+         id="text7010"><tspan
+           id="tspan7008"
+           style="font-size:75px;fill:#ff0000;fill-opacity:1;stroke-width:0.781249"
+           x="25.543505"
+           y="153.14423">PartiPpl.</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:21.8341px;line-height:0.85;font-family:Mansalva;-inkscape-font-specification:Mansalva;fill:#000080;stroke-width:0.545853"
+         x="51.447922"
+         y="184.51361"
+         id="text25366"><tspan
+           id="tspan25364"
+           style="fill:#000080;stroke-width:0.545853"
+           x="51.447922"
+           y="184.51361">We Know How to Party!</tspan></text>
+    </g>
+  </g>
+</svg>

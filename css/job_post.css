@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: unset;
+    padding: unset;
+    line-height: unset;
+}
+
+p {
+    padding: unset;
+    margin: unset;
+}
+
+::placeholder {
+    font-family: 'Reem Kufi', sans-serif;
+    color: darkblue;
+}
+
+.err_bg{
+    background-color: red;
+    padding: 10px 25px;
+    color: white;
+    position: relative;
+    font-size: 18px;
+    margin: 3px 0px;
+}
+
+.job-post {
+    max-width: 1920px;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.job-post-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job-post-left {
+    flex-basis: 550px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+}
+
+.job-post-left-logo {
+    flex-basis: 200px;
+    margin: auto;
+}
+
+.job-post-left-logo img {
+    box-shadow: 0px 30px 30px rgba(128, 128, 128, 0.466);
+    border-radius: 50%;
+}
+
+.job-post-left-block {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    background-color: rgba(255, 255, 255, 0.685);
+    box-shadow: 0px 30px 30px rgba(128, 128, 128, 0.466);
+    border-radius: 10px;
+}
+
+.job-post-left-block p {
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+.job-post-right {
+    flex-basis: 550px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.job-post-right-block {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.text-field {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Reem Kufi', sans-serif;
+    width: 100%;
+    border: 1px solid #707070;
+    border-radius: 5px;
+}
+
+.btn {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: #151865;
+    width: 100%;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 15px gray;
+}
+
+@media screen and (max-width: 1024px){
+        
+    .job-post{
+        padding: 50px 30px;
+    }
+
+    .job-post-container{
+        flex-wrap: wrap;
+        row-gap: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .job-post-right-block {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
